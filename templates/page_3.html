@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/jpeg" href="static/css/favicon.jpg"> <!-- Use JPEG image -->
+</head>
+
+<body>
+    <div class="container">
+        <h2>{{ translations['uploadExcelFile'] }}</h2>
+        {% extends "base.html" %}
+        {% block content %}
+        <form id="uploadForm" action="/page_3" method="post" enctype="multipart/form-data">
+            {% if message %}
+            <div class="message-box">
+                <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <p>{{ message }}</p>
+            </div>
+            {% endif %}
+            <div class="checkbox-container">
+                <label for="egyptian_pound">Print in Egyptian Pound</label>
+                <input id="egyptian_pound" name="egyptian_pound" type="checkbox">
+            </div>
+             <br>
+            <div class="input-container">
+                <label for="title">PDF Title:</label>
+                <input type="text" id="title" name="title">
+            </div>
+
+            <div class="checkbox-top-right">
+                <div class="checkbox-container">
+                    <label for="offer_pdf">Generate Offer PDF</label>
+                    <input type="checkbox" id="offer_pdf" name="offer_pdf">
+                </div>
+                <div class="checkbox-container">
+                    <label for="image_pdf">Generate Image PDF</label>
+                    <input type="checkbox" id="image_pdf" name="image_pdf">
+                </div>
+                <div class="checkbox-container">
+                    <label for="car_info_pdf">Generate Car Info PDF</label>
+                    <input type="checkbox" id="car_info_pdf" name="car_info_pdf">
+                </div>
+                <div class="checkbox-container">
+                    <label for="all_pdfs">Generate All PDFs</label>
+                    <input type="checkbox" id="all_pdfs" name="all_pdfs">
+                </div>
+            </div>
+
+            <div id="manualFields" style="display: none;">
+                <div class="input-container">
+                    <label for="manufacturer_brand">Manufacturer Brand:</label>
+                    <input type="text" id="manufacturer_brand" name="manufacturer_brand">
+                </div>
+                <div class="input-container">
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model">
+                </div>
+                <div class="input-container">
+                    <label for="firstregistration">First Registration:</label>
+                    <input type="text" id="firstregistration" name="firstregistration">
+                </div>
+                <div class="input-container">
+                    <label for="mileage">Mileage:</label>
+                    <input type="text" id="mileage" name="mileage">
+                </div>
+                <div class="input-container">
+                    <label for="fuel">Fuel:</label>
+                    <input type="text" id="fuel" name="fuel">
+                </div>
+                <div class="input-container">
+                    <label for="transmission">Transmission:</label>
+                    <input type="text" id="transmission" name="transmission">
+                </div>
+                <div class="input-container">
+                    <label for="power">Power:</label>
+                    <input type="text" id="power" name="power">
+                </div>
+                <div class="input-container">
+                    <label for="car_price">Car Price:</label>
+                    <input type="number" id="car_price" name="car_price">
+                </div>
+                <div class="input-container">
+                    <label for="EngineSize">Engine Size:</label>
+                    <input type="text" id="EngineSize" name="EngineSize">
+                </div>
+                <div class="input-container">
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color">
+                </div>
+                <div class="input-container">
+                    <label for="car_features">Car Features:</label>
+                    <textarea name="car_features" id="car_features" rows="10" cols="50"></textarea><br>
+                </div>
+                <div class="input-container">
+                    <label for="images[]">Upload Images:</label>
+                    <input type="file" id="images[]" name="images[]" multiple accept="image/*">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">{{ translations['generatePDFButton'] }}</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p id="loading-text">{{ translations['loadingText'] }}</p>
+    </div>
+
+    <div class="button-container">
+        <a href="{{ url_for('page_2') }}">
+            <button class="button-back" type="button">{{ translations['backButton'] }}</button>
+        </a>
+    </div>
+
+    <script src="/static/js/page_3_script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Retrieve the value of 'use_manual' from the server
+            const useManual = {{ 'true' if use_manual else 'false' }};
+
+            if (useManual) {
+                document.getElementById('manualFields').style.display = 'block';
+            }
+
+            const allPdfsCheckbox = document.getElementById('all_pdfs');
+            const otherCheckboxes = ['offer_pdf', 'image_pdf', 'car_info_pdf'];
+
+            allPdfsCheckbox.addEventListener('change', function() {
+                const isChecked = this.checked;
+                otherCheckboxes.forEach(id => {
+                    document.getElementById(id).checked = isChecked;
+                });
+            });
+        });
+    </script>
+    {% endblock %}
+</body>
+
+</html>

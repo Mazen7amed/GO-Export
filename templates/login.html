@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00000094;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            box-sizing: border-box;
+            /* Ensures padding is included in the total width */
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #000000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        .input_box {
+            position: relative;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 40px;
+        }
+
+        .input_box input {
+            width: 100%;
+            /* Full width */
+            padding: 10px 30px 10px 30px;
+            /* Adjust padding for both icons */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* Ensures padding is included in the total width */
+            margin-bottom: 0;
+            /* Remove bottom margin to avoid extra space */
+        }
+
+        .input_box .uil {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .input_box .uil-user {
+            left: 10px;
+        }
+
+        .input_box .uil-lock {
+            left: 10px;
+        }
+
+        .input_box .pw_toggle {
+            right: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            /* Adjust width to account for padding */
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            box-sizing: border-box;
+            /* Ensures padding is included in the total width */
+            margin-top: 10px;
+            /* Add margin-top to separate from input fields */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .messages {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h2>Welcome To GO Export</h2>
+    <form action="{{ url_for('login') }}" method="post">
+        <div class="input_box">
+            <input type="text" id="username" name="username" placeholder="Username" required autocomplete="cc-name">
+            <i class="uil uil-user"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" id="password" name="password" placeholder="Password" required autocomplete="current-password">
+            <i class="uil uil-lock"></i>
+            <i class="uil uil-eye-slash pw_toggle" onclick="togglePassword()"></i>
+        </div>
+        <input type="submit" value="Login">
+    </form>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="messages">
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    {% endwith %}
+</div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleIcon = document.querySelector('.pw_toggle');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.classList.replace('uil-eye-slash', 'uil-eye');
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.classList.replace('uil-eye', 'uil-eye-slash');
+            }
+        }
+    </script>
+</body>
+
+</html>

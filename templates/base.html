@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    
+    <style>
+        /* CSS styles for the Logout link */
+        .logout-link {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            right: 10px; /* Adjust as needed */
+            padding: 5px 10px;
+            background-color: #333333; /* Red background color */
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px; /* Adjust font size */
+        }
+
+        .logout-link:hover {
+            background-color: #cc0000; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="drop-down">
+        <!-- Language Selection Dropdown -->
+        <div>
+            <label for="WebLanguage" id="WebLanguageLabel">Select Language</label>
+            <select id="WebLanguage" name="WebLanguage" onchange="changeLanguage(this.value)">
+                <option value="en" {% if selected_language=='en' %}selected{% endif %}>English</option>
+                <option value="de" {% if selected_language=='de' %}selected{% endif %}>German</option>
+                <option value="fr" {% if selected_language=='fr' %}selected{% endif %}>French</option>
+            </select>            
+        </div>
+        
+        <!-- Page Content -->
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Logout Link -->
+    <a class="logout-link" href="{{url_for('login') }}">Logout</a>
+
+    <script>
+        function changeLanguage(language) {
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '/change_language', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    location.reload();
+                }
+            };
+            xhr.send('language=' + language);
+        }
+    </script>
+</body>
+</html>

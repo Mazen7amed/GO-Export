@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/jpeg" href="/static/css/favicon.jpg"> <!-- Use JPEG image -->
+</head>
+
+<body>
+    {% extends "base.html" %}
+
+    {% block content %}
+    <form action="/page_1" method="POST">
+        {% if message %}
+        <div class="message-box">
+            <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <p>{{ message }}</p>
+        </div>
+        {% endif %}
+
+        <!-- PDF Language Selection -->
+        <div class="drop-down">
+            <label for="pdfLanguage" id="pdfLanguageLabel">{{ translations['pdfLanguageLabel'] }}</label>
+            <select id="pdfLanguage" name="pdfLanguage">
+                <option value="en">English</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+        <br><br>
+        <!-- Dollar Rate Edit -->
+        <div class="input-container">
+            <label for="dollarRate" id="dollarRateLabel">{{ translations['dollarRateLabel'] }}</label>
+            <input type="number" id="dollarRate" name="dollarRate" value="{{ dollar_rate }}" disabled>
+            <button type="button" onclick="editDollarRate()">{{ translations['editDollarRateButton'] }}</button>
+        </div>
+        <br>
+        <!-- Euro Rate Edit -->
+        <div class="input-container">
+            <label for="euroRate" id="euroRateLabel">{{ translations['euroRateLabel'] }}</label>
+            <input type="number" id="euroRate" name="euroRate" value="{{ euro_rate }}" disabled>
+            <button type="button" onclick="editEuroRate()">{{ translations['editEuroRateButton'] }}</button>
+        </div>
+
+        <br>
+        <!-- Hidden Input Fields for Default Values -->
+        <input type="hidden" id="defaultClientMessage" name="defaultClientMessage"
+            value="We take great pleasure in offering our services at GO Export Group GmbH to help you import your dream car. Our commitment to professionalism, efficiency, competitive pricing, and unwavering integrity sets us apart. Customer satisfaction is our ultimate priority, and we strive to achieve it consistently. Please find below the comprehensive price quotation as per your initial request.">
+
+        <input type="hidden" id="defaultGoMessage" name="defaultGoMessage"
+            value="And finally, We at GO Export Group GmbH will always be happy to answer any of your inquiries regarding the above mentioned price offer or regarding the process of importing your dream car, so do not hesitate to contact us.">
+
+        <input type="hidden" id="Default_dollar_rate" name="Default_dollar_rate" value="{{ dollar_rate }}">
+        <input type="hidden" id="Default_euro_rate" name="Default_euro_rate" value="{{ euro_rate }}">
+        <input type="hidden" id="hidden_manualCheckbox" name="hidden_manualCheckbox" value="">
+        <br>
+
+
+        <!-- Submit Button -->
+        <div class="button-container">
+            <input type="submit" class="button-next" value="{{ translations['nextButton'] }}">
+        </div>
+        <script src="/static/js/page_1_script.js"></script>
+    </form>
+
+    {% if show_back_button %}
+    <div class="button-container">
+        <a href="{{ url_for('admin') }}" class="button-back">Back to Admin</a>
+    </div>
+    {% endif %}
+
+    {% endblock %}
+</body>
+
+</html>

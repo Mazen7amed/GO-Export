@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of PDF Files in {{ subfolder }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of PDF Files in {{ subfolder }}</h1>
+    <ul>
+        {% for pdf_file in pdf_files %}
+        <li><a href="/pdf/download/{{ subfolder }}/{{ pdf_file }}">{{ pdf_file }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/pdf/" class="back-link">Back to directories</a>
+</body>
+</html>

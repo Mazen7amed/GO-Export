@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Update {{ field_name.replace('_', ' ').title() }}</title>
+</head>
+<body>
+<div class="container">
+    <h1>Update {{ field_name.replace('_', ' ').title() }}</h1>
+    <form action="{{ url_for('update_cost', field_name=field_name) }}" method="POST">
+        <label for="{{ field_name }}">{{ field_name.replace('_', ' ').title() }}:</label>
+        <input id="{{ field_name }}" name="{{ field_name }}" type="text" required>
+        <button type="submit">Update</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Add User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a, header h1 {
+            color: #fff;
+            text-decoration: none;
+        }
+        header a {
+            float: right;
+            margin: 10px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid #ccc;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input_box {
+            position: relative;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .input_box input,
+        .input_box select {
+            width: 100%;
+            padding: 10px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .input_box .pw_toggle {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #0779e4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Add User</h1>
+            <a href="{{ url_for('admin') }}">Back to Admin</a>
+        </div>
+    </header>
+    <div class="container">
+        <form method="post">
+            <label for="name">Name:</label>
+            <div class="input_box">
+                <input type="text" id="name" name="name">
+            </div>
+            <label for="phone">Phone Number:</label>
+            <div class="input_box">
+                <input type="text" id="phone" name="phone">
+            </div>
+            <label for="email">Email:</label>
+            <div class="input_box">
+                <input type="email" id="email" name="email">
+            </div>
+            <label for="password">Password:</label>
+            <div class="input_box">
+                <input type="password" id="password" name="password">
+                <i class="uil uil-eye-slash pw_toggle" onclick="togglePassword()"></i>
+            </div>
+            <label for="user_type">User Type:</label>
+            <div class="input_box">
+                <select id="user_type" name="user_type">
+                    <option value="1">Admin</option>
+                    <option value="2">Not Admin</option>
+                </select>
+            </div>
+            <input type="submit" value="Add User">
+        </form>
+    </div>
+
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleIcon = document.querySelector('.pw_toggle');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.classList.replace('uil-eye-slash', 'uil-eye');
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.classList.replace('uil-eye', 'uil-eye-slash');
+            }
+        }
+    </script>
+</body>
+</html>

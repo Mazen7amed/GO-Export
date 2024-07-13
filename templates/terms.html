@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+</head>
+<body>
+    <h1>{{ translations['title'] }}</h1>
+
+    <h2>{{ translations['gettingStarted'] }}</h2>
+    <ul>
+        <li>{{ translations['welcomeMessage'] }}</li>
+    </ul>
+
+    <h2>{{ translations['step1'] }}</h2>
+    <ul>
+        <li>{{ translations['step1Details'] }}</li>
+    </ul>
+
+    <h2>{{ translations['step2'] }}</h2>
+    <ul>
+        <li>{{ translations['step2Details'] }}</li>
+    </ul>
+
+    <h2>{{ translations['step3'] }}</h2>
+    <ul>
+        {% for detail in translations['step3Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step4'] }}</h2>
+    <ul>
+        {% for detail in translations['step4Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step5'] }}</h2>
+    <ul>
+        <li>{{ translations['step5Details'] }}</li>
+    </ul>
+
+    <h2>{{ translations['step6'] }}</h2>
+    <ul>
+        <li>{{ translations['step6Details'] }}</li>
+    </ul>
+
+    <h2>{{ translations['step7'] }}</h2>
+    <ul>
+        {% for detail in translations['step7Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step8'] }}</h2>
+    <ul>
+        {% for detail in translations['step8Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step9'] }}</h2>
+    <ul>
+        {% for detail in translations['step9Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step10'] }}</h2>
+    <ul>
+        {% for detail in translations['step10Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step11'] }}</h2>
+    <ul>
+        {% for detail in translations['step11Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step12'] }}</h2>
+    <ul>
+        {% for detail in translations['step12Details'] %}
+            <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>{{ translations['step13'] }}</h2>
+    <ul>
+        <li>{{ translations['step13Details'] }}</li>
+    </ul>
+
+    <h2>{{ translations['step14'] }}</h2>
+    <ul>
+        <li>{{ translations['step14Details'] }}</li>
+    </ul>
+</body>
+</html>

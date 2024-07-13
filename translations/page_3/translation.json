@@ -1,0 +1,23 @@
+{
+  "en": {
+    "uploadExcelFile": "Upload Excel File",
+    "uploadLabel": "Upload Excel File:",
+    "generatePDFButton": "Generate PDFs",
+    "loadingText": "Generating the PDF, please wait...",
+    "backButton": "Back"
+  },
+  "de": {
+    "uploadExcelFile": "Excel-Datei hochladen",
+    "uploadLabel": "Excel-Datei hochladen:",
+    "generatePDFButton": "PDFs erstellen",
+    "loadingText": "PDF wird generiert, bitte warten...",
+    "backButton": "Zurück"
+  },
+  "fr": {
+    "uploadExcelFile": "Télécharger fichier Excel",
+    "uploadLabel": "Télécharger fichier Excel :",
+    "generatePDFButton": "Générer des PDF",
+    "loadingText": "Génération du PDF en cours, veuillez patienter...",
+    "backButton": "Retour"
+  }
+}

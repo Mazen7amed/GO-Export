@@ -1,0 +1,221 @@
+{
+    "en": {
+        "title": "G&O PDF Generator Usage Instructions",
+        "gettingStarted": "Getting Started",
+        "step1": "Step 1: Enter Seller Information",
+        "step2": "Step 2: Choose PDF Language",
+        "step3": "Step 3: Edit Dollar Rate",
+        "step4": "Step 4: Edit Euro Rate",
+        "step5": "Step 5: Edit Message to Client",
+        "step6": "Step 6: Edit G&O Message",
+        "step7": "Step 7: Edit Number Of Weeks",
+        "step8": "Step 8: Edit Index Of Car Images",
+        "step9": "Step 9: Change The Country Of Origin",
+        "step10": "Step 10: Edit G&O Fees",
+        "step11": "Step 11: Edit Germany Shipping",
+        "step12": "Step 12: Edit Port Customs Fees",
+        "step13": "Step 13: Upload Excel File",
+        "step14": "Step 14: Generate PDFs",
+        "welcomeMessage": "Welcome to the G&O PDF Generator application. This section will guide you through the basic steps of using the application.",
+        "step1Details": "Fill in the required details such as the seller\"s name and phone number.",
+        "step2Details": "Select the desired language for the generated PDF files.",
+        "step3Details": [
+            "To change the dollar rate, click the 'Edit Dollar Rate' button.",
+            "Once clicked, the input field becomes editable.",
+            "Enter the new dollar rate you want to set.",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step4Details": [
+            "To change the Euro rate, click the 'Edit Euro Rate' button.",
+            "Once clicked, the input field becomes editable.",
+            "Enter the new Euro rate you want to set.",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step5Details": "You can edit the default message to the client. Use the provided options to format the message.",
+        "step6Details": "Edit the G&O message that will be included in the generated PDF files.",
+        "step7Details": [
+            "To change the Number Of Weeks, click the 'Edit Number Of Weeks' button.",
+            "Once clicked, the input field becomes editable.",
+            "Enter the new Number Of Weeks you want to set.",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step8Details": [
+            "To change the Index Of Car Images, click the 'Edit Index Of Car Images' button.",
+            "Once clicked, the input field becomes editable.",
+            "Enter the new Index Of Car Images you want to set.",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step9Details": [
+            "To change the Country Of Origin, click the 'Change The Country Of Origin' button.",
+            "Once clicked, the input field becomes editable.",
+            "Enter the new Country Of Origin you want to set.",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step10Details": [
+            "To change the G&O Fees, click the 'Edit G&O Fees' button.",
+            "Once clicked, the input field becomes editable.",
+            "Enter the new G&O Fees you want to set. ",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step11Details": [
+            "To change the Germany Shipping, click the 'Edit Germany Shipping' button.",
+            "Once clicked, the input field becomes editable.",
+            "Enter the new Germany Shipping you want to set. ",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step12Details": [
+            "To change the Port Customs Fees, click the 'Edit Port Customs Fees' button.",
+            "Once clicked, the input field becomes editable. ",
+            "Enter the new Port Customs Fees you want to set. ",
+            "After editing, click the button again to confirm the new rate."
+        ],
+        "step13Details": "Upload an Excel file containing the data for generating PDF files.",
+        "step14Details": "Once the Excel file is uploaded, you can generate PDF files based on the provided data."
+    },
+    "de": {
+        "title": "G&O PDF-Generator Anleitung zur Verwendung",
+        "gettingStarted": "Erste Schritte",
+        "step1": "Schritt 1: Verkäuferinformationen eingeben",
+        "step2": "Schritt 2: PDF-Sprache auswählen",
+        "step3": "Schritt 3: Dollar-Kurs bearbeiten",
+        "step4": "Schritt 4: Euro-Kurs bearbeiten",
+        "step5": "Schritt 5: Nachricht an den Kunden bearbeiten",
+        "step6": "Schritt 6: G&O-Nachricht bearbeiten",
+        "step7": "Schritt 7: Anzahl der Wochen bearbeiten",
+        "step8": "Schritt 8: Index der Fahrzeugbilder bearbeiten",
+        "step9": "Schritt 9: Herkunftsland ändern",
+        "step10": "Schritt 10: G&O-Gebühren bearbeiten",
+        "step11": "Schritt 11: Versand nach Deutschland bearbeiten",
+        "step12": "Schritt 12: Hafen-Zollgebühren bearbeiten",
+        "step13": "Schritt 13: Excel-Datei hochladen",
+        "step14": "Schritt 14: PDFs generieren",
+        "welcomeMessage": "Willkommen beim G&O PDF-Generator. Dieser Abschnitt führt Sie durch die grundlegenden Schritte zur Verwendung der Anwendung.",
+        "step1Details": "Füllen Sie die erforderlichen Angaben wie den Namen und die Telefonnummer des Verkäufers aus.",
+        "step2Details": "Wählen Sie die gewünschte Sprache für die generierten PDF-Dateien aus.",
+        "step3Details": [
+            "Um den Dollar-Kurs zu ändern, klicken Sie auf die Schaltfläche 'Dollar-Kurs bearbeiten'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie den neuen Dollar-Kurs ein, den Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step4Details": [
+            "Um den Euro-Kurs zu ändern, klicken Sie auf die Schaltfläche 'Euro-Kurs bearbeiten'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie den neuen Euro-Kurs ein, den Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step5Details": "Sie können die Standardnachricht an den Kunden bearbeiten. Verwenden Sie die bereitgestellten Optionen, um die Nachricht zu formatieren.",
+        "step6Details": "Bearbeiten Sie die G&O-Nachricht, die in den generierten PDF-Dateien enthalten sein wird.",
+        "step7Details": [
+            "Um die Anzahl der Wochen zu ändern, klicken Sie auf die Schaltfläche 'Anzahl der Wochen bearbeiten'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie die neue Anzahl der Wochen ein, die Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step8Details": [
+            "Um den Index der Fahrzeugbilder zu ändern, klicken Sie auf die Schaltfläche 'Index der Fahrzeugbilder bearbeiten'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie den neuen Index der Fahrzeugbilder ein, den Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step9Details": [
+            "Um das Herkunftsland zu ändern, klicken Sie auf die Schaltfläche 'Herkunftsland ändern'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie das neue Herkunftsland ein, das Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step10Details": [
+            "Um die G&O-Gebühren zu ändern, klicken Sie auf die Schaltfläche 'G&O-Gebühren bearbeiten'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie die neuen G&O-Gebühren ein, die Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step11Details": [
+            "Um den Versand nach Deutschland zu ändern, klicken Sie auf die Schaltfläche 'Versand nach Deutschland bearbeiten'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie den neuen Versand nach Deutschland ein, den Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step12Details": [
+            "Um die Hafen-Zollgebühren zu ändern, klicken Sie auf die Schaltfläche 'Hafen-Zollgebühren bearbeiten'.",
+            "Nach dem Klick wird das Eingabefeld bearbeitbar.",
+            "Geben Sie die neuen Hafen-Zollgebühren ein, die Sie festlegen möchten.",
+            "Nach der Bearbeitung klicken Sie erneut auf die Schaltfläche, um den neuen Kurs zu bestätigen."
+        ],
+        "step13Details": "Laden Sie eine Excel-Datei hoch, die die Daten für die Generierung von PDF-Dateien enthält.",
+        "step14Details": "Sobald die Excel-Datei hochgeladen wurde, können Sie PDF-Dateien basierend auf den bereitgestellten Daten generieren."
+    },
+    "fr": {
+        "title": "Instructions d'utilisation du générateur de PDF G&O",
+        "gettingStarted": "Pour commencer",
+        "step1": "Étape 1 : Saisir les informations du vendeur",
+        "step2": "Étape 2 : Choisir la langue du PDF",
+        "step3": "Étape 3 : Modifier le taux de change du dollar",
+        "step4": "Étape 4 : Modifier le taux de change de l'euro",
+        "step5": "Étape 5 : Modifier le message au client",
+        "step6": "Étape 6 : Modifier le message G&O",
+        "step7": "Étape 7 : Modifier le nombre de semaines",
+        "step8": "Étape 8 : Modifier l'indice des images de voiture",
+        "step9": "Étape 9 : Changer le pays d'origine",
+        "step10": "Étape 10 : Modifier les frais G&O",
+        "step11": "Étape 11 : Modifier l'expédition en Allemagne",
+        "step12": "Étape 12 : Modifier les frais de douane portuaire",
+        "step13": "Étape 13 : Télécharger le fichier Excel",
+        "step14": "Étape 14 : Générer les PDF",
+        "welcomeMessage": "Bienvenue dans l'application G&O PDF Generator. Cette section vous guidera à travers les étapes de base de l'utilisation de l'application.",
+        "step1Details": "Remplissez les informations requises telles que le nom et le numéro de téléphone du vendeur.",
+        "step2Details": "Sélectionnez la langue désirée pour les fichiers PDF générés.",
+        "step3Details": [
+            "Pour modifier le taux de change du dollar, cliquez sur le bouton 'Modifier le taux de change du dollar'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez le nouveau taux de change du dollar que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step4Details": [
+            "Pour modifier le taux de change de l'euro, cliquez sur le bouton 'Modifier le taux de change de l'euro'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez le nouveau taux de change de l'euro que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step5Details": "Vous pouvez modifier le message par défaut au client. Utilisez les options fournies pour formater le message.",
+        "step6Details": "Modifier le message G&O qui sera inclus dans les fichiers PDF générés.",
+        "step7Details": [
+            "Pour modifier le nombre de semaines, cliquez sur le bouton 'Modifier le nombre de semaines'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez le nouveau nombre de semaines que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step8Details": [
+            "Pour modifier l'indice des images de voiture, cliquez sur le bouton 'Modifier l'indice des images de voiture'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez le nouvel indice des images de voiture que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step9Details": [
+            "Pour changer le pays d'origine, cliquez sur le bouton 'Changer le pays d'origine'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez le nouveau pays d'origine que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step10Details": [
+            "Pour modifier les frais G&O, cliquez sur le bouton 'Modifier les frais G&O'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez les nouveaux frais G&O que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step11Details": [
+            "Pour modifier l'expédition en Allemagne, cliquez sur le bouton 'Modifier l'expédition en Allemagne'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez la nouvelle expédition en Allemagne que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step12Details": [
+            "Pour modifier les frais de douane portuaire, cliquez sur le bouton 'Modifier les frais de douane portuaire'.",
+            "Une fois cliqué, le champ de saisie devient modifiable.",
+            "Entrez les nouveaux frais de douane portuaire que vous souhaitez définir.",
+            "Après avoir modifié, cliquez à nouveau sur le bouton pour confirmer le nouveau taux."
+        ],
+        "step13Details": "Téléchargez un fichier Excel contenant les données pour générer des fichiers PDF.",
+        "step14Details": "Une fois le fichier Excel téléchargé, vous pouvez générer des fichiers PDF en fonction des données fournies."
+    }
+}

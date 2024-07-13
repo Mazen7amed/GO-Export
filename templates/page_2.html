@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PDF Generator</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/favicon.jpg" rel="icon" type="image/jpeg">
+    <style>
+        .warning-message {
+            display: none;
+        }
+    </style> <!-- Use JPEG image -->
+</head>
+
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/page_2" method="POST">
+    {% if message %}
+    <div class="message-box">
+        <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p>{{ message }}</p>
+    </div>
+    {% endif %}
+    <br>
+
+    <div class="checkbox-container">
+        <input id="manualCheckbox" name="manualCheckbox" type="checkbox">
+        <label for="manualCheckbox">{{ translations['manualCheckboxLabel'] }}</label>
+    </div>
+    <br>
+    <div class="input-container">
+        <label for="purchaser_name">Purchaser Name:</label><br>
+        <input type="text" id="purchaser_name" name="purchaser_name"><br><br>
+    </div>
+
+    <div class="input-container">
+        <label for="purchaser_email">Purchaser Email:</label><br>
+        <input type="email" id="purchaser_email" name="purchaser_email"><br><br>
+    </div>
+
+    <div class="input-container">
+        <label for="purchaser_phone">Purchaser Phone:</label><br>
+        <input type="tel" id="purchaser_phone" name="purchaser_phone"><br><br>
+    </div>
+
+    <div class="input-container">
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+    </div>
+
+    <div class="input-container">
+        <label for="customs_option">Customs Option:</label><br>
+        <select id="customs_option" name="customs_option">
+            <option value="New Car">New Car</option>
+            <option value="Used Car">Used Car</option>
+            <option value="Disabled">Disabled</option>
+        </select><br><br>
+    </div>
+
+    <div class="input-container">
+        <label for="Egyptian_Customs">Egyptian Customs:</label><br>
+        <input type="number" id="Egyptian_Customs" name="Egyptian_Customs" step="0.01"><br><br>
+    </div>
+
+    <div class="input-container">
+        <label for="ad_link">URL :</label><br>
+        <input type="url" id="ad_link" name="ad_link"><br><br>
+    </div>
+
+    <div class="input-container">
+        <label for="destination_city" id="destination_cityLabel">Destination City:</label><br>
+        <input type="text" id="destination_city" name="destination_city" value="Alexandria" disabled>
+        <button type="button" onclick="editDestCity()">Edit Destination City</button>
+<br><br>
+    </div>
+
+
+
+
+    <div class="input-container">
+        <label for="vin_num">{{ translations['vin_numberlabel'] }}</label>
+        <input id="vin_num" name="vin_num" type="text">
+    </div>
+
+
+    <div class="warning-message" id="warningMessage">{{ translations['warningMessage'] }}
+    </div>
+
+    <div class="button-container">
+        <a href="{{ url_for('page_1') }}">
+            <button class="button-back" type="button">{{ translations['backButton']
+                }}
+            </button>
+        </a>
+        <input class="button-next" type="submit" value="{{ translations['nextButton'] }}">
+    </div>
+
+    <input id="defaultDestCity" name="defaultDestCity" type="hidden" value="Alexandria">
+
+    <script src="/static/js/page_2_script.js"></script>
+</form>
+{% endblock %}
+
+</body>
+
+</html>

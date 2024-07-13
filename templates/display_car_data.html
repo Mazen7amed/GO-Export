@@ -1,0 +1,30 @@
+<!-- display_car_data.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Information</h1>
+        <div class="car-info">
+            <h2>{{ api_data.car_title }}</h2>
+            <p><strong>Manufacturer/Brand:</strong> {{ api_data.manufacturer_brand }}</p>
+            <p><strong>Model:</strong> {{ api_data.model }}</p>
+            <p><strong>Engine Size:</strong> {{ api_data.EngineSize }}</p>
+            <p><strong>Features:</strong> {{ api_data.car_features }}</p>
+            <p><strong>Price:</strong> {{ api_data.car_price }}</p>
+            <p><strong>Mileage:</strong> {{ api_data.mileage }}</p>
+            <p><strong>Fuel Type:</strong> {{ api_data.fuel }}</p>
+            <p><strong>Transmission:</strong> {{ api_data.transmission }}</p>
+            <p><strong>Power:</strong> {{ api_data.power }}</p>
+            <p><strong>Color:</strong> {{ api_data.color }}</p>
+            <p><strong>Car Model:</strong> {{ api_data.firstregistration }}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+    "en": {
+        "sellerNameLabel": "Name:",
+        "phoneNumberLabel": "Number:",
+        "pdfLanguageLabel": "PDF Language:",
+        "dollarRateLabel": "Dollar Rate:",
+        "euroRateLabel": "Euro Rate:",
+        "messageToClientLabel": "Message To Client:",
+        "goMessageLabel": "G&O Message:",
+        "editDollarRateButton": "Edit Dollar Rate",
+        "editEuroRateButton": "Edit Euro Rate",
+        "editMessageToClientButton": "Edit The Message",
+        "editGoMessageButton": "Edit G&O Message",
+        "usageInstructions": "Usage Instructions",
+        "nextButton": "Next"
+    },
+    "de": {
+        "sellerNameLabel": "Name:",
+        "phoneNumberLabel": "Nummer:",
+        "pdfLanguageLabel": "PDF-Sprache:",
+        "dollarRateLabel": "Dollar-Kurs:",
+        "euroRateLabel": "Euro-Kurs:",
+        "messageToClientLabel": "Nachricht an den Kunden:",
+        "goMessageLabel": "G&O-Nachricht:",
+        "editDollarRateButton": "Dollar-Kurs bearbeiten",
+        "editEuroRateButton": "Euro-Kurs bearbeiten",
+        "editMessageToClientButton": "Nachricht bearbeiten",
+        "messageToClient": "Es ist uns eine große Freude, Ihnen unsere Dienstleistungen bei der GO Export Group GmbH anzubieten, um Ihnen zu helfen, Ihr Traumauto zu importieren. Unser Engagement für Professionalität, Effizienz, wettbewerbsfähige Preise und unerschütterliche Integrität zeichnet uns aus. Die Zufriedenheit unserer Kunden hat für uns oberste Priorität, und wir bemühen uns, dies konsequent zu erreichen. Bitte finden Sie unten die umfassende Preisübersicht gemäß Ihrer ursprünglichen Anfrage.",
+        "editGoMessageButton": "G&O-Nachricht bearbeiten",
+        "goMessage": "Und schließlich werden wir bei der GO Export Group GmbH immer gerne Ihre Anfragen bezüglich des oben genannten Preisangebots oder des Importvorgangs Ihres Traumautos beantworten. Zögern Sie also nicht, uns zu kontaktieren.",
+        "usageInstructions": "Benutzeranweisungen",
+        "nextButton": "Weiter"
+    },
+    "fr": {
+        "sellerNameLabel": "Nom :",
+        "phoneNumberLabel": "Numéro :",
+        "pdfLanguageLabel": "Langue du PDF :",
+        "dollarRateLabel": "Taux de dollar :",
+        "euroRateLabel": "Taux euro :",
+        "messageToClientLabel": "Message au client :",
+        "goMessageLabel": "Message G&O :",
+        "editDollarRateButton": "Modifier le taux de dollar",
+        "editEuroRateButton": "Modifier le taux euro",
+        "editMessageToClientButton": "Modifier le message",
+        "messageToClient": "Nous avons le plaisir de vous proposer nos services chez GO Export Group GmbH pour vous aider à importer votre voiture de rêve. Notre engagement envers le professionnalisme, l'efficacité, des prix compétitifs et une intégrité inébranlable nous distingue. La satisfaction de la clientèle est notre priorité absolue, et nous nous efforçons de l'atteindre de manière constante. Veuillez trouver ci-dessous le devis complet conformément à votre demande initiale.",
+        "editGoMessageButton": "Modifier le message G&O",
+        "goMessage": "Enfin, nous chez GO Export Group GmbH serons toujours heureux de répondre à vos questions concernant l'offre de prix mentionnée ci-dessus ou concernant le processus d'importation de votre voiture de rêve, alors n'hésitez pas à nous contacter.",
+        "usageInstructions": "Instructions d'utilisation",
+        "nextButton": "Suivant"
+    }
+}

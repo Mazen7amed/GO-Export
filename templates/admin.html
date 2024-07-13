@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Admin Page</title>
+    <link href="/static/css/admin.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Admin Page</h1>
+        <div>
+            <a href="{{ url_for('login') }}">Logout</a>
+            <a href="{{ url_for('add_user') }}">Add User</a>
+            <a href="{{ url_for('page_1') }}">Generate PDF</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="message {{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <ul>
+        {% for user in users %}
+        <li>
+            {{ user['Name'] }} - <a href="{{ url_for('modify_user', user_id=user['user_id']) }}">Modify</a> - <a
+                href="{{ url_for('remove_user', user_id=user['user_id']) }}">Remove</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <form action="{{ url_for('update_cost', field_name='week_no') }}" method="POST">
+        <label for="weekNo">Week No:</label>
+        <input id="weekNo" name="week_no" type="number" value="{{ costs['week_no'] }}" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <form action="{{ url_for('update_cost', field_name='go_fees_percent') }}" method="POST">
+        <label for="go_fees">G&O Fees %:</label>
+        <input id="go_fees" name="go_fees_percent" type="number" value="{{ costs['go_fees_percent'] }}" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <form action="{{ url_for('update_cost', field_name='germany_shipping') }}" method="POST">
+        <label for="germanyShipping">Germany Shipping:</label>
+        <input id="germanyShipping" name="germany_shipping" type="number" value="{{ costs['germany_shipping'] }}" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <form action="{{ url_for('update_cost', field_name='custom_fees') }}" method="POST">
+        <label for="custom_Fees">Custom Fees:</label>
+        <input id="custom_Fees" name="custom_fees" type="number" value="{{ costs['custom_fees'] }}" required>
+        <button type="submit">Update</button>
+    </form>
+
+</div>
+</body>
+</html>
