@@ -97,7 +97,6 @@ tqdm==4.66.4
 trio==0.25.1
 trio-websocket==0.11.1
 twisted==23.10.0-rc1
-twisted-iocpsupport==1.0.4
 typing_extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.2
