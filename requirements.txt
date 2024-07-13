@@ -36,7 +36,7 @@ httpx==0.13.3
 huggingface-hub==0.23.4
 hyperframe==5.2.0
 hyperlink==21.0.0
-idna==3.7
+idna==2.8
 importlib_metadata==7.2.1
 incremental==22.10.0
 intel-openmp==2021.4.0
